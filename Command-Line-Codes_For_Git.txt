@@ -1,0 +1,208 @@
+				Installing on macOS
+There are several ways to install Git on a Mac. The easiest is probably to install the Xcode Command Line Tools. On Mavericks (10.9) or above you can do this simply by trying to run git from the Terminal the very first time.
+
+
+
+				To Check Git Version
+Code:- git --version
+
+
+
+				To Install Git Via:-
+
+1. Homebrew
+
+Install homebrew if you don't already have it, then:
+
+To Install Homebrew:
+Code:- /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+
+
+				Homebrew Needs Command Line Tools So
+To Install Command Line Tools
+Code:- xcode-select --install
+or
+https://developer.apple.com/download/all/) or Xcode 3
+
+
+Xcode Cloud is a continuous integration and delivery service built into Xcode and designed expressly for Apple developers.
+
+
+
+				Then To Install Git Via Homebrew:-
+Code:- brew install git
+
+
+
+
+2. MacPorts
+
+Install MacPorts if you don't already have it, then:
+
+Code:- sudo port install git
+
+
+
+
+3. Xcode
+
+Apple ships a binary package of Git with Xcode.
+
+Xcode Cloud is a continuous integration and delivery service built into Xcode and designed expressly for Apple developers.
+
+
+				To Install X-Code:-
+Code:- xcode-select --install
+or
+https://developer.apple.com/download/all/) or Xcode 3
+
+
+
+
+4. Binary installer
+
+Tim Harper provides an installer for Git. The latest version is 2.33.0, which was released 5 months ago, on 2021-08-30.
+
+
+
+
+5. Building from Source
+
+If you prefer to build from source, you can find tarballs on kernel.org. The latest version is 2.35.1.
+
+
+
+
+				Installing git-gui
+If you would like to install git-gui and gitk, git's commit GUI and interactive history browser, you can do so using homebrew
+Code:- brew install git-gui
+
+
+
+
+
+
+
+
+
+
+				Some Important Git Codes:-
+
+1. Code:- Git init – initialize empty git repository
+
+
+2. Code:- Git status – see the status/changes in repository
+
+
+3. Code:- Git add ‘filename’ – add ‘filename’ to the staging area
+
+
+4. Code:- Git add * - to add all files
+
+
+5. Code:- Git commit -m “message” – store staged changes in repository with “message”
+
+
+6. Code:- Git commit -am – add and message
+
+
+7. Code:- Git log – to see the changes made in order to commit
+
+
+8. Code:- Git remote add origin https://www.github.com/...................... – to add remote repository
+
+				Or
+
+   Code:- Git remote add origin git@github.com:5and33p5tha/Git-Test.git
+
+
+9. Code:- Git push -u origin master 
+	Description:– to push the local repository(master) to server(origin)
+
+
+10. Code:- Git pull origin master 
+	Description:– pull down from server
+
+
+11. Code:- Git diff Head
+	Description:– to see the changes
+
+
+12. Code:- Git diff –staged
+	Description:– to see changes in stages only
+
+
+13. Code:- Git reset
+	Description:– unstage from repository
+
+
+14. Code:- Git checkout –filename
+	Description:– to discard all changes since last commit
+
+
+15. Code:- Git branch branch-name
+	Description:– to create new branch
+
+
+16. Code:- Git checkout branch-name
+	Description:– to switch branch
+
+
+17. Code:- Git rm ‘.txt’
+	Description:– to remove file from repository
+
+
+18. Code:- Git merge branch-name
+	Description:– to merge branches
+
+
+19. Code:- Git branch -d branchname
+	Description:– to delete branch
+
+
+20. Code:- Git config - - global username “ ”
+	Description:- Enter Your GitHub Account Username
+
+
+21. Code:- Git config - - global user-email “ “
+	Description:- Enter Your GitHub Account Email
+
+21. Code:- Git config - - global password “ “
+	Description:- Enter Your GitHub Account Password
+
+
+22. Code:- git reset --soft HEAD~1
+	Description:- To Remove a commit, use HEAD~2 to remove 2 commits and so on.
+
+23. Code:- git push origin +master --force
+	Description:- To Force A Change, say after forcibly removing a git commit, we use it.
+
+
+
+
+
+
+echo "# Git-Test" >> README.md
+
+git init
+
+git add README.md
+
+git commit -m "first commit"
+
+git branch -M master
+
+git remote add origin git@github.com:5and33p5tha/Git-Test.git
+
+git push -u origin master
+
+
+
+
+git remote add origin git@github.com:5and33p5tha/Git-Test.git
+
+git branch -M master
+
+git push -u origin master
