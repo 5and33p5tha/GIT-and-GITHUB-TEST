@@ -111,7 +111,7 @@ Code:- brew install git-gui
 7. Code:- Git log – to see the changes made in order to commit
 
 
-8. Code:- Git remote add origin https://www.github.com/...................... – to add remote repository
+8. Code:- Git remote add origin https://www.github.com/..................... .git – to add remote repository
 
 				Or
 
